@@ -1,0 +1,14 @@
+Process proc = pb.start();
+        BufferedReader br = new BufferedReader(new InputStreamReader(proc.getInputStream()));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(proc.getOutputStream()));
+
+        bw.write("sdflksdjfl/n");
+        bw.write("/n");
+        bw.flush();
+        
+        String line = "";
+        ret+=br.readLine()+"\n";
+        proc.destroy();
+        
+        
+        //bw.write(); 여기에 
